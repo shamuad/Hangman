@@ -127,10 +127,11 @@ function palindrome(word) {
     if (word.length === 0) {
         return true
     }
-    console.log(word[0] === word[word.length] -1);
-    console.log(palindrome(word.slice(1,-1)));
+    console.log(word[0] === word[word.length] - 1);
+    console.log(palindrome(word.slice(1, -1)));
     return word[0] === word[word.length - 1] && palindrome(word.slice(1, -1))
 }
 console.log(palindrome("racecar"));
 
 //console.log(ispal("racecar"));
+
